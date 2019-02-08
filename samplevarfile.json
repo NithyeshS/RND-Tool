@@ -1,0 +1,73 @@
+{
+    "TopoName":"Topology1",
+    "Username": "tapas",
+    "TopoId": "Ty1",
+    "Details": [
+        {
+            "Image_type": "Quagga",
+            "username": "root", 
+            "password": "root",
+            "Device_id": "R1",
+            "Device_name": "Router1",
+            "Device_type": "Router",
+	        "Device_cpu": "4",
+            "Device_memory":"12",
+            "sshIPAddress": "172.17.0.5",
+            "Connections": [
+                {
+                    "Connected_to": "Router2",
+                    "Link_type": "P2P",
+                    "Local_interface_name": "r1r2-r1",
+                    "Local_ip_address": "192.168.5.1/24",
+                    "localInterfaceUID": "3076",
+                    "remoteInterfaceName": "r2r1-r2",
+                    "remoteIPAddress": "192.168.5.2/24",
+                    "remoteInterfaceUID": "3078"
+                }, 
+                {
+                    "Connected_to": "Router3",
+                    "LinkType": "P2P",
+                    "Local_interface_name": "r1r3-r1",
+                    "Local_ip_address": "192.168.6.1/24",
+                    "localInterfaceUID": "3076",
+                    "remoteInterfaceName": "r3r1-r3",
+                    "remoteIPAddress": "192.168.6.2/24",
+                    "remoteInterfaceUID": "3078"
+                }
+            ]
+        },
+        {
+            "Image_type": "Quagga",
+            "username": "root", 
+            "password": "root",
+            "Device_id": "R2",
+            "Device_name": "Router2",
+            "Device_type": "Router",
+            "sshIPAddress": "172.17.0.6",
+	    "Device_cpu": "4",
+            "Device_memory":"12",
+            "Connections": [
+                {
+                    "Connected_to": "Router1",
+                    "Link_type": "default",
+                    "Local_interface_name": "r2r1-r2",
+                    "Local_ip_address": "192.168.5.2/24",
+                    "localInterfaceUID": "3078",
+                    "remoteInterfaceName": "r1r2-r1",
+                    "remoteIPAddress": "192.168.5.1/24",
+                    "remoteInterfaceUID": "3076"
+                }, 
+                {
+                    "Connected_to": "Router3",
+                    "Link_type": "default",
+                    "Local_interface_name": "r2r3-r2",
+                    "Local_ip_address": "192.168.7.1/24",
+                    "localInterfaceUID": "3076",
+                    "remoteInterfaceName": "r3r2-r3",
+                    "remoteIPAddress": "192.168.7.2/24",
+                    "remoteInterfaceUID": "3078"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+- hosts: localhost
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+
+  tasks:
+  - name: Attaching interface "{{ vethName }}" to bridge "{{ bridgeName }}"
+    command: sudo ovs-vsctl add-port "{{ bridgeName }}" "{{ vethName }}"
+

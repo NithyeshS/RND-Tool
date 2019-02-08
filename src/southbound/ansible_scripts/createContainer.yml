@@ -1,0 +1,21 @@
+- hosts: localhost
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+  tasks:
+
+  - name: Spawning container "{{containerName}}"
+    docker_container:
+      image: "{{imageName}}"
+      name: "{{containerName}}"
+      state: started
+      hostname: "{{containerName}}"
+      privileged: yes
+      interactive: yes
+      tty: yes
+      volumes:
+        - /var/log/rndtool/capture-data:/var/log/rndtool/capture-data
+        - /var/RNDTool/ssh:/root/.ssh
+      networks:
+        - name: "{{ mgmtBridgeName }}"
+      purge_networks: yes

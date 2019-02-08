@@ -1,0 +1,11 @@
+- hosts: localhost
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+  tasks:
+
+    - name: Bringing the bridge device down
+      command: sudo ip link set "{{ bridgeName }}" down
+    - name: Deleting bridge "{{ bridgeName }}"
+      command: sudo ovs-vsctl del-br "{{ bridgeName }}"
+    

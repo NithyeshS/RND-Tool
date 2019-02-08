@@ -1,0 +1,67 @@
+{
+        "TopoName": "TP1",
+        "Username": "tapas",          
+        "Details": [
+                        {
+                                "Device_name": "R1",
+                                "Device_type": "Router",
+				"Device_cpu": "4",
+                                "Device_memory":"12",
+				"Image_type": "Quagga",
+                                "Connections": [
+                                        {
+                                                "Connected_to": "R2",                                               
+                                		"Link_type": "P2P",
+						"Local_interface_name":"eth0",
+                                                "Local_ip_address":"10.10.10.1",
+                                                "Interface_mac":"FF:FF:FF:FF:FF:FF"
+				        },
+                                        {
+                                                "Connected_to": "R3",
+						"Link_type": "P2P",
+						"Local_interface_name":"eth0",
+                                                "Local_ip_address":"100.10.10.1",
+                                                "Interface_mac":"FF:FF:FF:FF:FF:FF"
+                                        }
+					]
+                                	
+                        },      
+                        {
+                                "Device_name": "R2",
+				"Device_type": "Router",
+				"Device_cpu": "4",
+				"Device_memory":"12",
+				"Image_type": "Quagga",                                
+                                "Connections": [
+                                        {
+                                                "Connected_to": "R3",
+						"Link_type": "P2P",
+                                                "Local_interface_name":"eth0",
+                                                "Local_ip_address":"10.10.10.1",
+                                                "Interface_mac":"FF:FF:FF:FF:FF:FF"
+                                        }
+                                	]
+                        },
+			{
+                                "Device_name": "R3",
+				"Device_type": "Router",
+				"Device_cpu": "4",
+				"Device_memory":"12",
+				"Image_type": "Quagga",                                
+                                "Connections": [
+                                        {
+                                                "Connected_to": "R1",
+						"Link_type": "GRE",
+						"Local_interface_name":"eth0",
+						"Local_ip_address":"10.10.10.1",
+						"Interface_mac":"FF:FF:FF:FF:FF:FF"
+                                        }
+                                	]
+                        }
+                       
+                	]
+                  
+        
+}
+
+

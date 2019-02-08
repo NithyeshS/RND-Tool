@@ -1,0 +1,8 @@
+- hosts: localhost
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+  tasks:
+  
+  - name: Attching interface "{{ interfaceName }}" to "{{ containerPID }}"
+    command: sudo ip link set netns "{{ containerPID }}" dev "{{ interfaceName }}" up

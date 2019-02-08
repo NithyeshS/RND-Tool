@@ -1,0 +1,11 @@
+- hosts: localhost
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+  tasks:
+
+  - name: Creating network for topology 
+    docker_network:
+      name: "{{bridgeName}}"
+      state: absent
+      force: yes

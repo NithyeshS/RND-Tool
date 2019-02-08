@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module SouthBoundWrapper</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>SouthBoundWrapper</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/nithyeshs/Data/Classes/RND-Tool/code-reorg/RND-Tool/src/southbound/SouthBoundWrapper.py">/media/nithyeshs/Data/Classes/RND-Tool/code-reorg/RND-Tool/src/southbound/SouthBoundWrapper.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="subprocess.html">subprocess</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="SouthBoundWrapper.html#SouthBoundActual">SouthBoundActual</a>
+</font></dt><dt><font face="helvetica, arial"><a href="SouthBoundWrapper.html#SouthBoundWrapper">SouthBoundWrapper</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SouthBoundActual">class <strong>SouthBoundActual</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Static methods defined here:<br>
+<dl><dt><a name="SouthBoundActual-attachInterface"><strong>attachInterface</strong></a>(logger, deviceID, interfaceName, linkType)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-checkBridgeExists"><strong>checkBridgeExists</strong></a>(logger, bridgeName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-createBridge"><strong>createBridge</strong></a>(logger, bridgeName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-createContainer"><strong>createContainer</strong></a>(logger, containerName, imageName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-createVeth"><strong>createVeth</strong></a>(logger, if1name, if2name)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-deleteBridge"><strong>deleteBridge</strong></a>(logger, bridgeName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-deleteContainer"><strong>deleteContainer</strong></a>(logger, containerName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-execute"><strong>execute</strong></a>(logger, command)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-executeInContainer"><strong>executeInContainer</strong></a>(logger, containerName, commandStr)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-executeOnHost"><strong>executeOnHost</strong></a>(logger, command)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-getBridgeID"><strong>getBridgeID</strong></a>(logger, bridgeName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-getContainerID"><strong>getContainerID</strong></a>(logger, containerName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-getContainerPID"><strong>getContainerPID</strong></a>(logger, containerName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-getContainerSSHIP"><strong>getContainerSSHIP</strong></a>(logger, containerName)</dt></dl>
+
+<dl><dt><a name="SouthBoundActual-getInterfaceUUID"><strong>getInterfaceUUID</strong></a>(logger, interfaceName)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SouthBoundWrapper">class <strong>SouthBoundWrapper</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>#pylint:&nbsp;enable=wrong-import-position<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="SouthBoundWrapper-__init__"><strong>__init__</strong></a>(self, logLevel)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-assignInterfaceIP"><strong>assignInterfaceIP</strong></a>(self, containerName, interfaceName, ipAddress)</dt><dd><tt>[Assign&nbsp;IP&nbsp;address&nbsp;to&nbsp;an&nbsp;interface&nbsp;inside&nbsp;a&nbsp;container.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;containerName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;container.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;interfaceName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;interface&nbsp;inside&nbsp;the&nbsp;container.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ipAddress&nbsp;{[str]}&nbsp;--&nbsp;[IP&nbsp;address&nbsp;of&nbsp;the&nbsp;interface.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;with&nbsp;device&nbsp;name,&nbsp;interface&nbsp;name,&nbsp;IP&nbsp;address&nbsp;and&nbsp;error(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-checkBridgeExists"><strong>checkBridgeExists</strong></a>(self, bridgeName)</dt><dd><tt>[Checks&nbsp;if&nbsp;a&nbsp;bridge&nbsp;with&nbsp;the&nbsp;given&nbsp;name&nbsp;'bridgeName'&nbsp;exists.]<br>
+&nbsp;<br>
+Note:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[DO&nbsp;NOT&nbsp;CALL&nbsp;THIS&nbsp;METHOD.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bridgeName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;bridge&nbsp;device.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[ErrorCode]&nbsp;--&nbsp;[INVALID_ARGUMENT,&nbsp;BRIDGE_ALREADY_EXISTS,&nbsp;BRIDGE_DOESNOT_EXIST]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-checkContainerExists"><strong>checkContainerExists</strong></a>(self, containerName)</dt><dd><tt>[Checks&nbsp;if&nbsp;a&nbsp;container&nbsp;with&nbsp;the&nbsp;given&nbsp;name&nbsp;'containerName'&nbsp;exists.]<br>
+&nbsp;<br>
+Note:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[DO&nbsp;NOT&nbsp;CALL&nbsp;THIS&nbsp;METHOD&nbsp;fFROM&nbsp;LOGIC&nbsp;LAYER.]&nbsp;<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;containerName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;container&nbsp;to&nbsp;be&nbsp;created.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[ErrorCode]&nbsp;--&nbsp;[INVALID_ARGUMENT,&nbsp;CONTAINER_ALREADY_EXISTS,&nbsp;CONTAINER_DOESNOT_EXIST]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-createBridge"><strong>createBridge</strong></a>(self, bridgeName)</dt><dd><tt>[Checks&nbsp;if&nbsp;a&nbsp;bridge&nbsp;device&nbsp;with&nbsp;the&nbsp;given&nbsp;name&nbsp;'bridgeName'&nbsp;exists.&nbsp;If&nbsp;not,&nbsp;creates&nbsp;the&nbsp;bridge.]<br>
+&nbsp;<br>
+Note:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[DO&nbsp;NOT&nbsp;CALL&nbsp;THIS&nbsp;METHOD.&nbsp;USE&nbsp;<a href="#SouthBoundWrapper-createDevice">createDevice</a>()&nbsp;INSTEAD.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bridgeName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;bridge&nbsp;to&nbsp;be&nbsp;created.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;containing&nbsp;bridge&nbsp;name&nbsp;and&nbsp;error&nbsp;code(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-createContainer"><strong>createContainer</strong></a>(self, containerName, imageType)</dt><dd><tt>[Checks&nbsp;if&nbsp;a&nbsp;container&nbsp;with&nbsp;the&nbsp;given&nbsp;name&nbsp;'containerName'&nbsp;exists.&nbsp;If&nbsp;not,&nbsp;creates&nbsp;the&nbsp;container.]<br>
+&nbsp;<br>
+Note:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[DO&nbsp;NOT&nbsp;CALL&nbsp;THIS&nbsp;METHOD.&nbsp;USE&nbsp;<a href="#SouthBoundWrapper-createDevice">createDevice</a>()&nbsp;INSTEAD.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;containerName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;container&nbsp;to&nbsp;be&nbsp;created.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;imageType&nbsp;{[DeviceTypes]}&nbsp;--&nbsp;[Type&nbsp;of&nbsp;docker&nbsp;image&nbsp;to&nbsp;be&nbsp;used&nbsp;to&nbsp;create&nbsp;the&nbsp;container.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;containing&nbsp;container&nbsp;ID,&nbsp;name,&nbsp;docker&nbsp;image,&nbsp;SSH&nbsp;IP&nbsp;and&nbsp;error&nbsp;code(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-createDevice"><strong>createDevice</strong></a>(self, deviceName, deviceType)</dt><dd><tt>[Creates&nbsp;a&nbsp;device&nbsp;of&nbsp;type&nbsp;deviceType&nbsp;with&nbsp;name&nbsp;deviceName.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deviceName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;device.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deviceType&nbsp;{[DeviceTypes]}&nbsp;--&nbsp;[Type&nbsp;of&nbsp;the&nbsp;device.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;containing&nbsp;device&nbsp;name,&nbsp;device&nbsp;type&nbsp;and&nbsp;other&nbsp;details&nbsp;depening&nbsp;on&nbsp;the&nbsp;type&nbsp;of&nbsp;device&nbsp;along&nbsp;with&nbsp;an&nbsp;error&nbsp;code(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-createLink"><strong>createLink</strong></a>(self, dev1Name, dev1IfaceName, dev1Type, dev2Name, dev2IfaceName, dev2Type)</dt><dd><tt>[Creates&nbsp;a&nbsp;link&nbsp;to&nbsp;between&nbsp;2&nbsp;devices&nbsp;after&nbsp;checking&nbsp;if&nbsp;they&nbsp;exist.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev1Name&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;first&nbsp;device.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev1IfaceName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;first&nbsp;device's&nbsp;interface.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev1Tyep&nbsp;{[DeviceTypes]}&nbsp;--&nbsp;[Type&nbsp;of&nbsp;the&nbsp;first&nbsp;device.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev2Name&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;second&nbsp;device.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev2IfaceName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;second&nbsp;device's&nbsp;interface.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev2Tyep&nbsp;{[DeviceTypes]}&nbsp;--&nbsp;[Type&nbsp;of&nbsp;the&nbsp;second&nbsp;device.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;with&nbsp;device&nbsp;name,&nbsp;connection&nbsp;details&nbsp;and&nbsp;error&nbsp;code(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-deleteBridge"><strong>deleteBridge</strong></a>(self, bridgeName)</dt><dd><tt>[Checks&nbsp;if&nbsp;a&nbsp;bridge&nbsp;device&nbsp;with&nbsp;the&nbsp;given&nbsp;name&nbsp;'bridgeName'&nbsp;exists.&nbsp;If&nbsp;yes,&nbsp;deletes&nbsp;the&nbsp;bridge.]<br>
+&nbsp;<br>
+Note:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[DO&nbsp;NOT&nbsp;CALL&nbsp;THIS&nbsp;METHOD.&nbsp;USE&nbsp;<a href="#SouthBoundWrapper-deleteDevice">deleteDevice</a>()&nbsp;INSTEAD.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bridgeName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;bridge]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;with&nbsp;the&nbsp;deleted&nbsp;bridge&nbsp;name&nbsp;and&nbsp;error&nbsp;code&nbsp;(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-deleteContainer"><strong>deleteContainer</strong></a>(self, containerName)</dt><dd><tt>[Checks&nbsp;if&nbsp;a&nbsp;container&nbsp;with&nbsp;the&nbsp;given&nbsp;name&nbsp;'containerName'&nbsp;exists.&nbsp;If&nbsp;yes,&nbsp;deletes&nbsp;the&nbsp;container.]<br>
+&nbsp;<br>
+Note:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[DO&nbsp;NOT&nbsp;CALL&nbsp;THIS&nbsp;METHOD.&nbsp;USE&nbsp;<a href="#SouthBoundWrapper-deleteDevice">deleteDevice</a>()&nbsp;INSTEAD.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;containerName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;container]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;with&nbsp;the&nbsp;deleted&nbsp;container&nbsp;name&nbsp;and&nbsp;error&nbsp;code&nbsp;(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-deleteDevice"><strong>deleteDevice</strong></a>(self, deviceName, deviceType)</dt><dd><tt>[Deletes&nbsp;a&nbsp;device&nbsp;of&nbsp;type&nbsp;deviceType&nbsp;with&nbsp;name&nbsp;deviceName.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deviceName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;device.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deviceType&nbsp;{[DeviceTypes]}&nbsp;--&nbsp;[Type&nbsp;of&nbsp;the&nbsp;device.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;containing&nbsp;device&nbsp;name&nbsp;and&nbsp;an&nbsp;error&nbsp;code(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-deleteLink"><strong>deleteLink</strong></a>(self, dev1Name, dev1IfaceName, dev1Type, dev2Name, dev2IfaceName, dev2Type)</dt><dd><tt>[Deletes&nbsp;interfaces&nbsp;connecting&nbsp;2&nbsp;devices&nbsp;after&nbsp;checking&nbsp;if&nbsp;the&nbsp;containers&nbsp;exist.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev1Name&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;first&nbsp;device.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev1IfaceName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;first&nbsp;device's&nbsp;interface.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev1Tyep&nbsp;{[DeviceTypes]}&nbsp;--&nbsp;[Type&nbsp;of&nbsp;the&nbsp;first&nbsp;device.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev2Name&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;second&nbsp;device.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev2IfaceName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;second&nbsp;device's&nbsp;interface.]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dev2Tyep&nbsp;{[DeviceTypes]}&nbsp;--&nbsp;[Type&nbsp;of&nbsp;the&nbsp;second&nbsp;device.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;with&nbsp;device&nbsp;name,&nbsp;connection&nbsp;details&nbsp;and&nbsp;error&nbsp;code(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-getBridgeID"><strong>getBridgeID</strong></a>(self, bridgeName)</dt><dd><tt>[Checks&nbsp;if&nbsp;a&nbsp;bridge&nbsp;device&nbsp;with&nbsp;the&nbsp;given&nbsp;name&nbsp;'bridgeName'&nbsp;exists.&nbsp;If&nbsp;yes,&nbsp;fetches&nbsp;its&nbsp;ID.]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bridgeName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;bridge.]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;--&nbsp;[JSON&nbsp;containing&nbsp;bridge&nbsp;ID,&nbsp;name&nbsp;and&nbsp;error&nbsp;code(if&nbsp;any).]</tt></dd></dl>
+
+<dl><dt><a name="SouthBoundWrapper-runPacketCapture"><strong>runPacketCapture</strong></a>(self, containerName, captureCommand)</dt><dd><tt>[Runs&nbsp;tcpdump&nbsp;to&nbsp;capture&nbsp;packets&nbsp;inside&nbsp;a&nbsp;container&nbsp;using&nbsp;the&nbsp;command&nbsp;specified]<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;containerName&nbsp;{[str]}&nbsp;--&nbsp;[Name&nbsp;of&nbsp;the&nbsp;contaier]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;captureCommand&nbsp;{[str]}&nbsp;--&nbsp;[TCP&nbsp;DUMP&nbsp;command]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[JSON]&nbsp;-&nbsp;[JSON&nbsp;containing&nbsp;error&nbsp;code(if&nbsp;any).]</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

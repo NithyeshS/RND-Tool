@@ -1,0 +1,81 @@
+{
+        "TopoName": "Topology1",
+        "Username": "tapas",          
+        "Details": [
+                        {
+                                "Device_name": "Router1",
+                                "Device_type": "Router",
+				"Device_cpu": "4",
+                                "Device_memory":"12",
+				"Image_type": "Quagga",
+                                "Connections": [
+                                        {
+                                                "Connected_to": "Router2",                                               
+                                		"Link_type": "P2P",
+						"Interface_name":"eth2",
+                                                "Interface_ip":"10.10.20.1",
+                                                "Interface_mac":"FF:FF:FF:FF:FF:FF"
+				        },
+                                        {
+                                                "Connected_to": "Router3",
+						"Link_type": "GRE",
+						"Interface_name":"eth3",
+                                                "Interface_ip":"100.10.30.1",
+                                                "Interface_mac":"FF:FF:FF:FF:FF:FF"
+                                        }
+					]
+                                	
+                        },      
+                        {
+                                "Device_name": "Router2",
+				"Device_type": "Router",
+				"Device_cpu": "4",
+				"Device_memory":"12",
+				"Image_type": "Quagga",                                
+                                "Connections": [
+                                        {
+                                                "Connected_to": "Router1",
+						"Link_type": "P2P",
+						"Interface_name":"eth3",
+						"Interface_ip":"10.10.20.2",
+						"Interface_mac":"FF:FF:FF:FF:FF:FF"
+                                        },
+                                        {
+                                                "Connected_to": "Router3",
+						"Link_type": "P2P",
+                                                "Interface_name":"eth2",
+                                                "Interface_ip":"10.10.10.1",
+                                                "Interface_mac":"FF:FF:FF:FF:FF:FF"
+                                        }
+                                	]
+                        },
+			{
+                                "Device_name": "Router3",
+				"Device_type": "Router",
+				"Device_cpu": "4",
+				"Device_memory":"12",
+				"Image_type": "Quagga",                                
+                                "Connections": [
+                                        {
+                                                "Connected_to": "Router1",
+						"Link_type": "GRE",
+						"Interface_name":"eth2",
+						"Interface_ip":"100.10.30.2",
+						"Interface_mac":"FF:FF:FF:FF:FF:FF"
+                                        },
+                                        {
+                                                "Connected_to": "Router2",
+						"Link_type": "P2P",
+                                                "Interface_name":"eth3",
+                                                "Interface_ip":"10.10.10.2",
+                                                "Interface_mac":"FF:FF:FF:FF:FF:FF"
+                                        }
+                                	]
+                        }
+                       
+                	]
+                  
+        
+}
+
+

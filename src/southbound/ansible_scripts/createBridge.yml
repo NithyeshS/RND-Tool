@@ -1,0 +1,11 @@
+- hosts: localhost
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+  tasks:
+
+    - name: Creating bridge "{{ bridgeName }}"
+      command: sudo ovs-vsctl add-br "{{ bridgeName }}"
+    - name: Bringing the bridge device up
+      command: sudo ip link set "{{ bridgeName }}" up
+

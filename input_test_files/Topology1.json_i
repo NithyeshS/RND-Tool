@@ -1,0 +1,117 @@
+{
+    "TopoId": "Ty1",
+    "TopoName": "Topology1",
+    "Details": [
+        {
+            "Device_id": "R1",
+            "Device_name": "Router1",
+            "Device_memory": "12",
+            "Device_type": "Router",
+            "Device_cpu": "4",
+            "Image_type": "Quagga",
+            "Connections": [
+                {
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router2",
+                    "Local_ip_address": ""
+                },
+		{
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router3",
+                    "Local_ip_address": ""
+                }
+            ]
+        },
+        {
+            "Device_id": "R2",
+            "Device_name": "Router2",
+            "Device_memory": "12",
+            "Device_type": "Router",
+            "Device_cpu": "4",
+            "Image_type": "Quagga",
+            "Connections": [
+		{
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router1",
+                    "Local_ip_address": ""
+                },
+		{
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router3",
+                    "Local_ip_address": ""
+                }
+            ]
+        },
+        {
+            "Device_id": "R3",
+            "Device_name": "Router3",
+            "Device_memory": "12",
+            "Device_type": "Router",
+            "Device_cpu": "4",
+            "Image_type": "Quagga",
+            "Connections": [
+		{
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router1",
+                    "Local_ip_address": ""
+                },
+		{
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router2",
+                    "Local_ip_address": ""
+                },
+		{
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router4",
+                    "Local_ip_address": ""
+                },
+		{
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router4",
+                    "Local_ip_address": ""
+                }
+            ]
+        },
+	{
+            "Device_id": "R4",
+            "Device_name": "Router4",
+            "Device_memory": "12",
+            "Device_type": "Router",
+            "Device_cpu": "4",
+            "Image_type": "Quagga",
+            "Connections": [
+                {
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router3",
+                    "Local_ip_address": ""
+                },
+                {
+                    "Link_type": "P2P",
+                    "Local_interface_name": "",
+                    "Interface_mac": "FF:FF:FF:FF:FF:FF",
+                    "Connected_to": "Router3",
+                    "Local_ip_address": ""
+                }
+            ]
+        }
+    ],
+    "Username": "tapas"
+}

@@ -1,0 +1,15 @@
+- hosts: localhost
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+  tasks:
+
+  - name: Stopping container "{{containerName}}"
+    docker_container:
+      name: "{{containerName}}"
+      state: stopped
+
+  - name: Deleting container "{{containerName}}"
+    docker_container:
+      name: "{{containerName}}"
+      state: absent
